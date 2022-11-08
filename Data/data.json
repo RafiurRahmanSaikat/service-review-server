@@ -1,0 +1,101 @@
+[
+  {
+    "CatName": "Wedding Photography",
+    "categoryid": "01",
+    "categoryimg": "https://images.unsplash.com/photo-1606800052052-a08af7148866?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+    "price": 1500,
+    "details": "Wedding photography can include engagement photos, pre-wedding photos, shots taken during the ceremony or reception on the big day itself, as sometimes may even include honeymoon or “trash the dress” photos. Wedding photography is also one of the larger categories of commercial photography, with many photographers specializing in this service.There are two main approaches to wedding photography: traditional or photojournalistic. The traditional approach typically has posed images that the photographer controls and directs throughout the event. The photojournalistic approach usually has a more editorial feel, with candid, more natural images taken using little direction. A third, more fashion-focused approach also exists, with these shots using more innovative or creative techniques, delivering more dramatic imagery. Culture and tradition often play a large part in the style and types of shots a couple is looking to capture.",
+    "review": [
+      {
+        "name": "Amanda & Andrew ",
+        "categoryid": "01",
+        "img": "https://images.squarespace-cdn.com/content/v1/615511137ee8bb0f8bbae591/873054fd-783a-4a0d-a8fb-37d5d0cdd903/St+Andrew%27s+Wahroonga+Wedding-904AA-0594.jpg?format=750w",
+        "details": "Hi Ronny,Thank you so much for sending those!I can’t say how happy we are that we had you as our wedding photographer - you were just absolutely amazing and the photos show that! All of our guests commented how good you were and how you just knew when and how to take the perfect picture! I will be recommending you to anyone that is looking for a wedding photographer!!Those sneak peek photos are so nice - thank you so much!Enjoy your holiday and Thank you very much,Rachel and Jackson- married and reception at Taronga Zoo - Sydney",
+
+        "submit": "1667883137586"
+      },
+      {
+        "name": "Marc and Steph",
+        "categoryid": "01",
+        "img": "https://images.squarespace-cdn.com/content/v1/615511137ee8bb0f8bbae591/710f0b5a-8aec-4372-bc39-5bec94ce8266/Wedding+-+Long+Reef+Beach-914TM-0776.jpg?format=750w",
+        "details": "Hi RonnyThanks so much for your work - we love them!You’ve captured some wonderful moments for us and really  ThanksAmber and Andrew - married at St Andrew’s Wahroonga and reception at Bronte SLSC - Sydney",
+        "submit": "1667883137446"
+      },
+      {
+        "name": "Kathy & Neal",
+        "categoryid": "01",
+        "img": "https://images.squarespace-cdn.com/content/v1/615511137ee8bb0f8bbae591/b16db240-4ff2-4301-9eec-2eec6e8efda9/Creek+Street+Photography-893KN-0921.jpg?format=750w",
+        "details": "Hi Ronny,Hope you are well.Amazing, thank you so much for the photos. They look great and we love them so much!Thank you for all your work on our wedding day. You provided such a great vibe and everyone loved you! Our parents Many thanksKathy and Neal - married in 2022 at Moby Dicks Whale Beach, Sydney ",
+        "submit": "1667883137446"
+      },
+      {
+        "name": "Marc and Steph",
+        "categoryid": "01",
+        "img": "https://images.squarespace-cdn.com/content/v1/615511137ee8bb0f8bbae591/3cc36132-6ef8-4fab-94f8-775e05804590/Wedding+Photography+Zest+Sydney.jpg?format=750w",
+        "details": "Hi RonnyI have been waiting all week to come back from our honeymoon to thank you!We have been obsessing   photos and are so happy with them. Our families are raving about how great they are and can't wait to share them As soon as you walked through the house at Collaroy you were on! I loved it, and I felt so much at ease, in fact the entire day I knew I had nothing to worry about because you are outstanding. Your quality of photos are flawless, the way you move in and out of awkward positions just to get the perfect shot is incredible! And you yourself are just so warm, joyful and full of light, which is exactly what I felt from you when I spoke to you on the phone to book. I knew we picked the right photographer for us!You were so kind to my grandmother, our nieces and nephews, our families and friends, and so patient with us when taking our photos. We are just so grateful for all you did for us leading up to and on our wedding day. Thank you so much!Kindest Regards,Marc and Steph - married in December 2021 at Long Reef Golf Club on the Northern  of Sydney ",
+        "submit": "1667883135446"
+      },
+      {
+        "name": "Marc and Steph",
+        "categoryid": "01",
+        "img": "https://images.squarespace-cdn.com/content/v1/615511137ee8bb0f8bbae591/f01cc712-3b95-4a6b-8f98-c6bbe3b0ddc7/Wedding+Photography+Northern+Beaches+Sydney.jpg?format=750w",
+        "details": "Hi Ronny,Our sincere thanks for these beautiful photos, that absolutely captured the most heartfelt and happy We have no idea how we will pick our favourites for an album, though we definitely have one or two that we cannot wait to  framed and in our home.There is so much of the day that is a blur and it is lovely to relive the day through these images.  You managed to get fantastic shots from everywhere and were so discreet - your attention to detail is (I love you got the Just Married flags in the sunlight!).  How good do the drone images look too!All the best to you and your family Ronny, have a wonderful weekend.Cheers Tamara & Brian - married on 12th June 2021 at Milestone Events  at North Head  in Sydney ",
+        "submit": "1667883125446"
+      },
+      {
+        "name": "Shikha and Stuart",
+        "categoryid": "01",
+        "img": "https://images.squarespace-cdn.com/content/v1/615511137ee8bb0f8bbae591/af1476f3-e2ed-4383-b719-82f2ba227941/Creek+Street+Photography-801LM-0074.jpg?format=750w",
+        "details": "Dearest Ronny! Oh my goodness, we received our photos!!!!!❤From the bottom of our hearts we would like to say the biggest THANK YOU!!!They are BEAUTIFUL, BREATHTAKING and everything we could have ever dreamed of. Ronny you captured the raw emotion in our eyes, the natural moments of pure bliss plus all the magic in between. We have no idea how we are going to chose our photos for the album!!!We are so incredibly grateful to have had you photograph our wedding and we thank you once again for your amazing artistry, you are one talented man! It was such a pleasure to have you a part of our special day.Thank you!Kind Regards,Nathan & Bianca Pereira Xxx  - married on 30th May 2020 - See their Cronulla wedding with Bass and Flinders Point ceremony and Wanda Beach and Cape Solander location shoot",
+        "submit": "1667883115446"
+      },
+      {
+        "name": "Mr and Mrs Myers",
+        "categoryid": "01",
+        "img": "https://images.squarespace-cdn.com/content/v1/615511137ee8bb0f8bbae591/115cb782-a7ec-4287-b9a3-cd9441d86fe8/Long+Reef+Golf+Club+Wedding-775LT-1367.jpg?format=750w",
+        "details": "Hi Ronny,Just arrived back from our honeymoon yesterday and wanted to say a huge thank you for everything! You made our wedding day so incredibly special and we are super excited as we know the shots will be amazing. Everyone spoke to us saying how great Ronny is and they were all extremely impressed with your work!We cannot thank you enough for all the effort you put in our day to make it such a special day for us. It was the best day of our lives and couldn’t believe how smoothly it all went!Thank you again!Mr and Mrs Myers – see their Long Reef Golf Club Wedding on the blog",
+        "submit": "1667884115446"
+      }
+    ]
+  },
+  {
+    "CatName": "Wildlife Photography",
+    "categoryid": "02",
+    "categoryimg": "https://images.unsplash.com/photo-1645547745244-761fdc866f0f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+    "price": 1900,
+    "details": "Wildlife photographers generally need to have an “in” or some experience to achieve great shots of wildlife. Patience, good gear, and safe shooting locations are all important when trying to capture animals in the wilderness. Did we mention patience? It can take days of waiting to achieve the perfect shot of a wild animal. The type of animal being photographed will also determine the amount of preparation and type of camera gear required.Equipment like tripods and shutter releases and telephoto, wide-angle, or macro lenses, are usually used in wildlife photography. Sometimes, camera traps are set up in the environment for an extended period of time, taking shots using motion detection so that animals aren’t spooked and their natural behaviors aren’t disturbed by lurking photographers. These shots are often used in editorials for publications like National Geographic. If you’re about to undertake this kind of photography or hiring a custom content crew, don’t forget your badge of patience. You will need it.",
+    "review": [{}]
+  },
+  {
+    "CatName": "Sports Photography",
+    "categoryid": "03",
+    "categoryimg": "https://images.unsplash.com/photo-1516725630185-19ae408fbc83?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1171&q=80",
+    "details": "The act of capturing sports imagery is known as sports photography. This type of photography is often considered to be a branch of photojournalism, particularly with regard to professional sports. Sports photographers often work for newspapers or sports magazines, but may also create imagery for advertising purposes. Amateur sports photography usually belongs to the vernacular photography niche, in which the focus is on capturing the everyday life of regular people.Since most sports are fast-paced, camera gear and settings need to be able to capture the action as it happens, with shutter speed being most critical. Location is also an important part of getting a great shot. The type of sport being shot will determine a lot of the requirements for the camera body and lens that works best. Individual sports, such as golf, boxing, cycling, or track-and-field may focus on a small depth of field, capturing the intensity of the participants. Team sports, like football, hockey, soccer, and the like, require a larger depth of field to properly capture all of the action and the various teams participating.",
+    "price": 2200,
+    "review": [{}]
+  },
+  {
+    "CatName": "Travel Photography",
+    "categoryid": "04",
+    "categoryimg": "https://images.unsplash.com/photo-1530345586132-0fbc15e9ae5b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+    "details": "Travel photographyDocumenting a place, particularly one that highlights the cultural, historical, touristic, or iconic aspects of the given area, is called travel photography. Dating back to the 1850s, the genre had been made incredibly popular by travel publications like National Geographic and Conde Nast Traveler.Images can be used for editorial or commercial purposes, depicting the ambiance of a place, as well as the feeling one gets from the land, people, and cultures that inhabit it. Very broad in its subject matter, the genre makes use of elements of portraiture, landscape photography, architecture photography, street photography, and night photography, among others. B&W photography is also a commonly employed technique.",
+    "price": 2250,
+    "review": [{}]
+  },
+  {
+    "CatName": "Macro Photography",
+    "categoryid": "05",
+    "categoryimg": "https://images.unsplash.com/photo-1558340003-ab5ede9e117f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1631&q=80",
+    "details": "Macro photography requires specialized lenses to capture a true reproduction ratio of the subject matter, with depth of field and lighting being important considerations in adjusting the shot. Extension tubes can also be used to extend lenses for that up-close and personal capture.Photomicrography, which uses a digital microscope to capture images, is achieved when the reproduction ratio of the shot is greater than 10:1.",
+    "price": 2600,
+    "review": [{}]
+  },
+  {
+    "CatName": "Pet Photography",
+    "categoryid": "06",
+    "categoryimg": "https://images.unsplash.com/photo-1532972056642-31309b6708c4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1035&q=80",
+    "price": 1500,
+    "details": "A subset of family photography, pet photography focuses on capturing beloved two-legged and four-legged friends. Birds, cats, dogs, horses, bunnies, hamsters, and even fish can be captured in a portrait manner for a family to cherish.Depending on the type of pet, treats, props, and various other accessories can come in handy when trying to get the animal to pose for a shot. Candid shots of multiple pets chasing one another on a beach or at a park can be achieved, as can more formal posed shots of pets in their home environment, perhaps on their favorite chair or with their favorite toys or humans. Moving shots will require adjusted camera settings and perhaps even a special prime lens with a fixed focal length and a wide aperture.",
+    "review": [{}]
+  }
+]
