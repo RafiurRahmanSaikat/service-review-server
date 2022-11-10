@@ -11,7 +11,7 @@ app.use(express.json());
 // MyPhotography
 const uri =
   "mongodb+srv://MyPhotography:m56JQsWVfjeVllcW@cluster0.8thupxf.mongodb.net/?retryWrites=true&w=majority";
-// const uri = "mongodb://0.0.0.0:27017/";
+
 const client = new MongoClient(uri);
 const DbConnect = async () => {
   try {
@@ -22,36 +22,37 @@ const DbConnect = async () => {
   }
 };
 DbConnect();
+
 const Service = client.db("MyPhotography").collection("PhotographyCategory");
+
 const Review = client.db("MyPhotography").collection("review");
+
 app.get("/", async (req, res) => {
   const LimitData = +req.query.data;
   if (LimitData) {
     try {
-      const cursor = Service.find({}).limit(LimitData);
+      const cursor = Service.find({}).sort({ submit: -1 }).limit(LimitData);
       const result = await cursor.toArray();
       res.send({ result, LimitData });
-      console.log("WOW ", LimitData);
+   
     } catch (error) {
       console.error(error);
     }
   } else {
     try {
-      const cursor = Service.find({});
+      const cursor = Service.find({}).sort({ submit: -1 });
       const result = await cursor.toArray();
       res.send({ result, LimitData });
-      console.log("WOW ", LimitData);
     } catch (error) {
       console.error(error);
     }
   }
 });
 app.get("/services", async (req, res) => {
-  const Email = req.query.id;
-  const query = { _id: ObjectId(Email) };
-  const result = await Service.findOne(query);
+  const ID = req.query.id;
+  const query = { _id: ObjectId(ID) };
+  const result = await Service.findOne(query).sort({ submit: -1 });
   res.send({ result });
-  console.log(Email, query);
 });
 app.get("/review", async (req, res) => {
   const ID = req.query.id;
@@ -61,7 +62,7 @@ app.get("/review", async (req, res) => {
   const data = Review.find(query).sort({ submit: -1 });
   const result = await data.toArray();
   res.send({ result });
-  console.log(ID, query);
+
 });
 app.get("/userreview", async (req, res) => {
   const Email = req.query.email;
@@ -72,7 +73,8 @@ app.get("/userreview", async (req, res) => {
   const result = await data.toArray();
   res.send({ result });
 });
-// ..................DELETE start
+
+//....... ..................DELETE start................
 
 app.delete("/delete", async (req, res) => {
   console.log("HITTING API DELETE");
@@ -89,18 +91,14 @@ app.delete("/delete", async (req, res) => {
     res.send({
       success: true,
       message: `Failed to Delete`,
-    })
+    });
   }
 });
 
-// .........................DELETE end
+// .........................DELETE end............................
 //
 
-
-
-
-// ,..............................................................POST REQ
-
+// ,............................................POST REQ Start..........................
 
 app.post("/addreview", async (req, res) => {
   try {
@@ -125,6 +123,36 @@ app.post("/addreview", async (req, res) => {
     });
   }
 });
+// ,............................................POST REQ End..........................
+
+
+// ..............................NEW Service ADD Start ..........
+
+app.post("/addNewService", async (req, res) => {
+  try {
+    const result = await Service.insertOne(req.body);
+
+    if (result.insertedId) {
+      res.send({
+        success: true,
+        message: `Successfully Added  with id ${result.insertedId}`,
+      });
+    } else {
+      res.send({
+        success: false,
+        error: "Couldn't Added",
+      });
+    }
+  } catch (error) {
+    console.log(error.name.bgRed, error.message.bold);
+    res.send({
+      success: false,
+      error: error.message,
+    });
+  }
+});
+// ..............................NEW Service ADD End ..........
+
 
 app.listen(port, (req, res) => {
   console.log("OK server is running", port);
