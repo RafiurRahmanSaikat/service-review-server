@@ -47,33 +47,61 @@ app.get("/", async (req, res) => {
   }
 });
 app.get("/services", async (req, res) => {
-  const ID = req.query.id;
-  const query = { _id: ObjectId(ID) };
+  const Email = req.query.id;
+  const query = { _id: ObjectId(Email) };
   const result = await Service.findOne(query);
   res.send({ result });
-  console.log(ID, query);
+  console.log(Email, query);
 });
-
 app.get("/review", async (req, res) => {
   const ID = req.query.id;
-
   const query = {
     CatName: ID,
   };
-
-  
-  const data = Review.find(query).sort( { "submit": -1 } );
+  const data = Review.find(query).sort({ submit: -1 });
   const result = await data.toArray();
   res.send({ result });
-
   console.log(ID, query);
 });
+app.get("/userreview", async (req, res) => {
+  const Email = req.query.email;
+  const query = {
+    email: Email,
+  };
+  const data = Review.find(query).sort({ submit: -1 });
+  const result = await data.toArray();
+  res.send({ result });
+});
+// ..................DELETE start
 
+app.delete("/delete", async (req, res) => {
+  console.log("HITTING API DELETE");
+  const id = req.query.id;
+  console.log(id);
+  const result = await Review.deleteOne({ _id: ObjectId(id) });
+
+  if (result.deletedCount) {
+    res.send({
+      success: true,
+      message: `Successfully Deleted `,
+    });
+  } else {
+    res.send({
+      success: true,
+      message: `Failed to Delete`,
+    })
+  }
+});
+
+// .........................DELETE end
+//
 
 
 
 
 // ,..............................................................POST REQ
+
+
 app.post("/addreview", async (req, res) => {
   try {
     const result = await Review.insertOne(req.body);
@@ -81,7 +109,7 @@ app.post("/addreview", async (req, res) => {
     if (result.insertedId) {
       res.send({
         success: true,
-        message: `Successfully Added ${req.body.name} with id ${result.insertedId}`,
+        message: `Successfully Added  with id ${result.insertedId}`,
       });
     } else {
       res.send({
