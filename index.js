@@ -61,8 +61,8 @@ app.get("/review", async (req, res) => {
     CatName: ID,
   };
 
-  const options = {};
-  const data = Review.find(query);
+  
+  const data = Review.find(query).sort( { "submit": -1 } );
   const result = await data.toArray();
   res.send({ result });
 
