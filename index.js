@@ -34,7 +34,6 @@ app.get("/", async (req, res) => {
       const cursor = Service.find({}).sort({ submit: -1 }).limit(LimitData);
       const result = await cursor.toArray();
       res.send({ result, LimitData });
-   
     } catch (error) {
       console.error(error);
     }
@@ -51,7 +50,7 @@ app.get("/", async (req, res) => {
 app.get("/services", async (req, res) => {
   const ID = req.query.id;
   const query = { _id: ObjectId(ID) };
-  const result = await Service.findOne(query).sort({ submit: -1 });
+  const result = await Service.findOne(query);
   res.send({ result });
 });
 app.get("/review", async (req, res) => {
@@ -62,7 +61,6 @@ app.get("/review", async (req, res) => {
   const data = Review.find(query).sort({ submit: -1 });
   const result = await data.toArray();
   res.send({ result });
-
 });
 app.get("/userreview", async (req, res) => {
   const Email = req.query.email;
@@ -77,7 +75,6 @@ app.get("/userreview", async (req, res) => {
 //....... ..................DELETE start................
 
 app.delete("/delete", async (req, res) => {
-  console.log("HITTING API DELETE");
   const id = req.query.id;
   console.log(id);
   const result = await Review.deleteOne({ _id: ObjectId(id) });
@@ -96,7 +93,32 @@ app.delete("/delete", async (req, res) => {
 });
 
 // .........................DELETE end............................
-//
+
+// ................Patch  Req Start...........
+
+app.patch("/update/", async (req, res) => {
+  const id = req.query.id;
+  const UpdateData = req.body;
+  console.log("id", id, "DATA", UpdateData);
+  const result = await Review.updateOne(
+    { _id: ObjectId(id) },
+    { $set: req.body }
+  );
+  if (result.matchedCount) {
+    res.send({
+      success: true,
+      message: `successfully updated `,
+    });
+  } else {
+    res.send({
+      success: false,
+      error: "Couldn't update  the product",
+    });
+  }
+  //
+});
+
+// ................Patch  Req End...........
 
 // ,............................................POST REQ Start..........................
 
@@ -125,7 +147,6 @@ app.post("/addreview", async (req, res) => {
 });
 // ,............................................POST REQ End..........................
 
-
 // ..............................NEW Service ADD Start ..........
 
 app.post("/addNewService", async (req, res) => {
@@ -152,7 +173,6 @@ app.post("/addNewService", async (req, res) => {
   }
 });
 // ..............................NEW Service ADD End ..........
-
 
 app.listen(port, (req, res) => {
   console.log("OK server is running", port);
